@@ -350,7 +350,10 @@ header {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
-  transition: all var(--transition-medium);
+  transition: box-shadow var(--transition-medium), backdrop-filter var(--transition-medium);
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 header::before {
@@ -1514,10 +1517,17 @@ body.page-transitioning {
   animation: pageEnter 0.8s ease-out;
 }
 
-.page-content header {
+/* Completely exclude header from page load animations */
+.page-content header,
+body > header {
   animation: none !important;
   opacity: 1 !important;
   transform: none !important;
+}
+
+.page-content header *,
+body > header * {
+  animation: none !important;
 }
 
 @keyframes pageEnter {
