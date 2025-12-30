@@ -199,15 +199,114 @@ if ('IntersectionObserver' in window) {
 }
 
 // ============================================
-// GALLERY LIGHTBOX (for future use)
+// GALLERY LIGHTBOX
 // ============================================
-const photoItems = document.querySelectorAll('.photo-item');
-photoItems.forEach(item => {
-    item.addEventListener('click', function() {
-        // Add lightbox functionality here if needed
-        console.log('Photo clicked - lightbox would open here');
+function initLightbox() {
+    // Create lightbox element if it doesn't exist
+    let lightbox = document.querySelector('.lightbox');
+    if (!lightbox) {
+        lightbox = document.createElement('div');
+        lightbox.className = 'lightbox';
+        lightbox.innerHTML = `
+            <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+            <div class="lightbox-content">
+                <img src="" alt="Lightbox image">
+            </div>
+        `;
+        document.body.appendChild(lightbox);
+    }
+
+    const lightboxImg = lightbox.querySelector('img');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+
+    // Add click handlers to all photo items
+    const photoItems = document.querySelectorAll('.photo-item');
+    photoItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const img = this.querySelector('img');
+            if (img) {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
     });
-});
+
+    // Close lightbox on background click
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Close lightbox on close button click
+    closeBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        closeLightbox();
+    });
+
+    // Close lightbox on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+// Initialize lightbox
+initLightbox();
+
+// ============================================
+// MASONRY LAYOUT FOR PHOTO GALLERY
+// ============================================
+function initMasonryLayout() {
+    const galleries = document.querySelectorAll('.photo-gallery');
+
+    galleries.forEach(gallery => {
+        const items = gallery.querySelectorAll('.photo-item');
+
+        items.forEach(item => {
+            const img = item.querySelector('img');
+
+            if (img) {
+                // Function to calculate and set row span
+                const setRowSpan = () => {
+                    const rowHeight = 10; // matches grid-auto-rows in CSS
+                    const rowGap = 24; // matches gap in CSS (1.5rem = 24px)
+
+                    // Get the actual rendered height of the image
+                    const imgHeight = img.offsetHeight;
+
+                    if (imgHeight > 0) {
+                        // Calculate how many rows this image should span
+                        const rowSpan = Math.ceil((imgHeight + rowGap) / (rowHeight + rowGap));
+                        item.style.gridRowEnd = `span ${rowSpan}`;
+                    }
+                };
+
+                // Set row span after image loads
+                if (img.complete) {
+                    setRowSpan();
+                } else {
+                    img.addEventListener('load', setRowSpan);
+                }
+
+                // Recalculate on window resize
+                window.addEventListener('resize', debounce(setRowSpan, 200));
+            }
+        });
+    });
+}
+
+// Initialize masonry layout
+window.addEventListener('load', initMasonryLayout);
 
 // ============================================
 // READING PROGRESS BAR (for blog posts)
