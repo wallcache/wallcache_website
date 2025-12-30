@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book reviews by Hal Wall - Detailed analysis of literary fiction, philosophy, and difficult books.">
+    <title>Book Reviews | Hal Wall</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ffk6gen.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/logos/wallcache-logo.png" alt="wallcache Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../cv.html">CV</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li class="dropdown">
+                    <a href="index.html">Writing ▾</a>
+                    <div class="dropdown-content">
+                        <a href="blog.html">Blog</a>
+                        <a href="book-reviews.html">Book Reviews</a>
+                    </div>
+                </li>
+                <li><a href="../wallcache.html">wallcache</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-content">
+            <h1 class="tilt-heavy">Book Reviews</h1>
+            <p class="handwriting" style="font-size: 1.3rem;">Detailed reviews of books that shaped how I see the world</p>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section>
+        <div class="container-narrow">
+            <div class="paper-card text-center">
+                <p style="font-size: 1.2rem; line-height: 1.8;">
+                    Detailed reviews of books that have shaped how I see the world. Mostly old literature,
+                    philosophy, the difficult kind. No summaries—just honest thinking about what the best
+                    writers have to say.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Reviews -->
+    <section class="blueprint-grid">
+        <div class="container-narrow">
+            <!-- Review 1: The Remains of the Day -->
+            <div class="book-card">
+                <div class="book-cover">📕</div>
+                <div class="book-info">
+                    <h2 class="book-title">The Remains of the Day</h2>
+                    <p class="book-author">Kazuo Ishiguro</p>
+                    <div class="book-rating">★★★★★</div>
+                    <p class="book-review">
+                        Ishiguro's masterpiece is a devastating portrait of emotional repression and wasted
+                        opportunities. Narrated by Stevens, an English butler whose unwavering devotion to
+                        duty has cost him love and authentic human connection, the novel unfolds through
+                        increasingly unreliable recollections.
+                    </p>
+                    <p class="book-review">
+                        What makes this extraordinary is how Ishiguro mirrors form and content—Stevens's
+                        meticulously controlled prose is the linguistic equivalent of his emotional constraint.
+                        The gaps, hesitations, and euphemisms reveal more than direct statements ever could.
+                    </p>
+                    <span class="book-annotation">
+                        A quietly devastating meditation on regret and the human capacity for self-deception.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Review 2: Educated -->
+            <div class="book-card">
+                <div class="book-cover">📘</div>
+                <div class="book-info">
+                    <h2 class="book-title">Educated</h2>
+                    <p class="book-author">Tara Westover</p>
+                    <div class="book-rating">★★★★☆</div>
+                    <p class="book-review">
+                        Tara Westover's memoir chronicles her journey from a survivalist family in rural Idaho
+                        to earning a PhD from Cambridge. Raised without formal education, Westover's path required
+                        not just intellectual growth but painful reconstruction of her entire worldview.
+                    </p>
+                    <p class="book-review">
+                        The book's power lies in Westover's honesty about the complexity of leaving behind family.
+                        Education transformed her, but at tremendous cost. She resists easy narratives, acknowledging
+                        both the abuse and the genuine love that existed.
+                    </p>
+                    <span class="book-annotation">
+                        Powerful testament to resilience and the price of self-creation.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Review 3: Never Let Me Go -->
+            <div class="book-card">
+                <div class="book-cover">📗</div>
+                <div class="book-info">
+                    <h2 class="book-title">Never Let Me Go</h2>
+                    <p class="book-author">Kazuo Ishiguro</p>
+                    <div class="book-rating">★★★★★</div>
+                    <p class="book-review">
+                        Another Ishiguro masterpiece. This dystopian novel follows students at an English boarding
+                        school who gradually discover they're clones raised to donate organs. What could be sensational
+                        becomes, in Ishiguro's hands, a profound meditation on mortality and identity.
+                    </p>
+                    <p class="book-review">
+                        The genius lies in restraint. The horror isn't dramatized but accepted with quiet resignation.
+                        The characters' passive acceptance mirrors our own relationship with mortality—we know death is
+                        coming, yet we focus on smaller concerns.
+                    </p>
+                    <span class="book-annotation">
+                        Haunting exploration of what gives life meaning when death is certain.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Review 4: Sapiens -->
+            <div class="book-card">
+                <div class="book-cover">📙</div>
+                <div class="book-info">
+                    <h2 class="book-title">Sapiens</h2>
+                    <p class="book-author">Yuval Noah Harari</p>
+                    <div class="book-rating">★★★★☆</div>
+                    <p class="book-review">
+                        Harari's ambitious sweep through human history identifies three major revolutions: Cognitive,
+                        Agricultural, and Scientific. His central thesis: humans conquered the world through our unique
+                        ability to believe in shared fictions—nations, religions, corporations, money.
+                    </p>
+                    <p class="book-review">
+                        The book excels at reframing familiar history. Harari argues the Agricultural Revolution was
+                        "history's biggest fraud." However, breadth comes at the expense of depth. Some arguments feel
+                        oversimplified, and speculation is occasionally presented as fact.
+                    </p>
+                    <span class="book-annotation">
+                        Thought-provoking overview that challenges conventional wisdom about human progress.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Review 5: Blood Meridian -->
+            <div class="book-card">
+                <div class="book-cover">📕</div>
+                <div class="book-info">
+                    <h2 class="book-title">Blood Meridian</h2>
+                    <p class="book-author">Cormac McCarthy</p>
+                    <div class="book-rating">★★★★★</div>
+                    <p class="book-review">
+                        McCarthy's brutal masterpiece follows a teenage runaway who joins a gang of scalp hunters
+                        in 1850s Mexico. The violence is unrelenting, biblical in scale, rendered in prose that
+                        oscillates between stark minimalism and baroque grandeur.
+                    </p>
+                    <p class="book-review">
+                        At the novel's dark heart is Judge Holden—one of literature's most terrifying creations.
+                        The Judge represents violence as fundamental to human existence, a philosophy the novel
+                        neither endorses nor refutes. McCarthy presents evil without explanation or redemption.
+                    </p>
+                    <span class="book-annotation">
+                        Not for everyone. But if you can stomach it: essential American literature.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating System -->
+    <section>
+        <div class="container">
+            <h2 class="tilt-light mb-xl text-center">About These Reviews</h2>
+            <div class="grid grid-3">
+                <div class="navy-card text-center">
+                    <h3 class="handwriting">Rating System</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.8;">
+                        ★★★★★ Masterpiece<br>
+                        ★★★★☆ Excellent<br>
+                        ★★★☆☆ Good<br>
+                        ★★☆☆☆ Mediocre<br>
+                        ★☆☆☆☆ Poor
+                    </p>
+                </div>
+
+                <div class="navy-card text-center">
+                    <h3 class="handwriting">Focus Areas</h3>
+                    <p style="font-size: 0.95rem;">
+                        Literary fiction, memoirs, cultural criticism, history, philosophy, and science.
+                        Occasional genre fiction when it's exceptional.
+                    </p>
+                </div>
+
+                <div class="navy-card text-center">
+                    <h3 class="handwriting">Approach</h3>
+                    <p style="font-size: 0.95rem;">
+                        Close reading focused on themes, style, and craft. Analysis over summary.
+                        Honest assessments of both strengths and weaknesses.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hal Wall</h3>
+                    <p>
+                        Data Engineer, photographer, and writer based in Barnes, London.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">gh</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="../cv.html">CV</a></li>
+                        <li><a href="../projects.html">Projects</a></li>
+                        <li><a href="index.html">Writing</a></li>
+                        <li><a href="../wallcache.html">wallcache</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><a href="../projects.html#long-form-press">Long Form Press</a></li>
+                        <li><a href="../wallcache.html">wallcache Photography</a></li>
+                        <li><a href="../projects.html">Data Engineering Work</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Writing</h3>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="book-reviews.html">Book Reviews</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hal Wall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

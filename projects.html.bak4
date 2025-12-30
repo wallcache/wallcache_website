@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hal Wall's projects - Data engineering work, Long Form Press literary goods, and creative ventures.">
+    <title>Projects | Hal Wall</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ffk6gen.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="assets/images/logos/wallcache-logo.png" alt="wallcache Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="dropdown">
+                    <a href="writing/index.html">Writing ▾</a>
+                    <div class="dropdown-content">
+                        <a href="writing/blog.html">Blog</a>
+                        <a href="writing/book-reviews.html">Book Reviews</a>
+                    </div>
+                </li>
+                <li><a href="wallcache.html">wallcache</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-content">
+            <h1 class="tilt-heavy">Work</h1>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section>
+        <div class="container-narrow">
+            <div class="paper-card text-center">
+                <p style="font-size: 1.3rem; line-height: 1.8;">
+                    A mix of data engineering systems, literary goods, and the occasional renovation.
+                    The work is always the same underneath: building something that actually works,
+                    then leaving it alone.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Engineering Projects -->
+    <section class="blueprint-grid">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2 class="tilt-light">Data Engineering</h2>
+                <p class="handwriting" style="font-size: 1.1rem; color: var(--charcoal);">
+                    Systems and pipelines built to move data with precision
+                </p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="project-card">
+                    <h3>Insurance Analytics Platform</h3>
+                    <p>
+                        Built secure, scalable data products powering AI-driven portfolio management at Chubb.
+                        Performant pipelines using Databricks and PySpark, enabling robust access to clean data
+                        for downstream ML modeling.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Databricks</span>
+                        <span class="tag">PySpark</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">Kafka</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Cloud Migration & Unity Catalog</h3>
+                    <p>
+                        Supported Chubb's cloud migration, implementing Databricks Unity Catalog and
+                        transitioning legacy on-prem systems to Azure-native architecture. The kind
+                        of work that's invisible when it's done right.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Azure</span>
+                        <span class="tag">Databricks</span>
+                        <span class="tag">Unity Catalog</span>
+                        <span class="tag">Migration</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Financial Services Data Pipelines</h3>
+                    <p>
+                        Migrated on-prem databases to Azure Cloud at Quilter Financial Planning. Robust
+                        pipelines with Azure Data Factory, ensuring data quality and reliability across
+                        the business.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Azure Data Factory</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Power BI</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Automated Workflows & Orchestration</h3>
+                    <p>
+                        Designed and automated key workflows using Kafka and Databricks Workflows,
+                        improving efficiency and analytics throughput. Python, SQL, Spark. The usual suspects.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Kafka</span>
+                        <span class="tag">Databricks Workflows</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Spark</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Long Form Press Feature Section -->
+    <section class="long-form-press" id="long-form-press">
+        <div class="container">
+            <!-- Hero -->
+            <div class="lfp-hero">
+                <div class="lfp-logo">⊚</div>
+                <h2>Long Form Press</h2>
+                <p class="lfp-tagline">"Better read than dead"</p>
+                <p class="lfp-mission">
+                    A literary goods brand for readers who finish the book. We make beautiful, thoughtful
+                    objects for people who take reading seriously—not merchandise, but things that respect
+                    the depth of the written word. The ouroboros as our symbol: eternal return, cyclical
+                    reading, the endless conversation between writer and reader.
+                </p>
+            </div>
+
+            <!-- Brand Philosophy -->
+            <div class="lfp-section">
+                <h3>Brand Philosophy</h3>
+                <p>
+                    At the heart of Long Form Press is the ouroboros—the ancient symbol of the serpent
+                    eating its own tail. It represents eternal return, the cyclical nature of reading,
+                    and literary immortality. Great books are never truly finished; they're revisited,
+                    reread, and rediscovered throughout our lives.
+                </p>
+                <p>
+                    Our aesthetic philosophy combines timeless literary sensibility with contemporary
+                    design. We believe reading is an act of attention in a world allergic to depth.
+                    Our products reflect that: carefully sourced, well-designed, made for people who've
+                    earned the right to be a bit precious about books.
+                </p>
+            </div>
+
+            <!-- Product Categories -->
+            <div class="lfp-section">
+                <h3>What We Make</h3>
+                <p style="margin-bottom: 2rem;">
+                    Each category is carefully curated to enhance the reading experience, combining
+                    functionality with aesthetic beauty.
+                </p>
+
+                <div class="grid grid-2">
+                    <div class="paper-card" style="background: rgba(245, 243, 240, 0.1); border: 2px solid rgba(245, 243, 240, 0.2);">
+                        <h4 style="color: var(--cream); margin-bottom: 1rem;">📖 Bookmarks & Accessories</h4>
+                        <p style="color: var(--cream); font-size: 0.95rem;">
+                            Elegant metal and leather bookmarks featuring the ouroboros motif.
+                            Designed to last a lifetime, not a single book.
+                        </p>
+                    </div>
+
+                    <div class="paper-card" style="background: rgba(245, 243, 240, 0.1); border: 2px solid rgba(245, 243, 240, 0.2);">
+                        <h4 style="color: var(--cream); margin-bottom: 1rem;">🎨 Literary Prints</h4>
+                        <p style="color: var(--cream); font-size: 0.95rem;">
+                            Art prints featuring classic literary quotes, author portraits, and
+                            bibliophilic imagery for people who curate their walls carefully.
+                        </p>
+                    </div>
+
+                    <div class="paper-card" style="background: rgba(245, 243, 240, 0.1); border: 2px solid rgba(245, 243, 240, 0.2);">
+                        <h4 style="color: var(--cream); margin-bottom: 1rem;">📓 Reading Journals</h4>
+                        <p style="color: var(--cream); font-size: 0.95rem;">
+                            Thoughtfully designed notebooks for tracking reading lists, capturing
+                            insights, and recording reflections. The commonplace book, updated.
+                        </p>
+                    </div>
+
+                    <div class="paper-card" style="background: rgba(245, 243, 240, 0.1); border: 2px solid rgba(245, 243, 240, 0.2);">
+                        <h4 style="color: var(--cream); margin-bottom: 1rem;">✨ Curated Goods</h4>
+                        <p style="color: var(--cream); font-size: 0.95rem;">
+                            Carefully selected book-adjacent products: candles, bookends, reading
+                            lights. Things that make the ritual better.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How We Work -->
+            <div class="lfp-section">
+                <h3>How We Work</h3>
+                <p>
+                    Long Form Press operates on a foundation of quality partnerships and sustainable practices:
+                </p>
+                <ul style="list-style: none; padding-left: 0; margin-top: 1rem;">
+                    <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--burnt-orange);">⊚</span>
+                        Direct relationships with manufacturers ensuring quality control at every step
+                    </li>
+                    <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--burnt-orange);">⊚</span>
+                        Small-batch production runs maintaining exclusivity and reducing waste
+                    </li>
+                    <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--burnt-orange);">⊚</span>
+                        Sustainable materials sourced from responsible suppliers
+                    </li>
+                    <li style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--burnt-orange);">⊚</span>
+                        Digital-first e-commerce approach minimizing overhead and environmental impact
+                    </li>
+                    <li style="padding-left: 1.5rem; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--burnt-orange);">⊚</span>
+                        Community-driven product development listening to reader feedback
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Connect -->
+            <div class="lfp-section">
+                <h3>Connect & Shop</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    Follow our journey as we build a brand for serious readers. New products,
+                    behind-the-scenes insights, and literary inspirations shared regularly.
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <a href="#" class="btn btn-accent">Visit Shop (Coming Soon)</a>
+                    <a href="#" class="btn btn-secondary">Follow on Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Projects -->
+    <section class="blueprint-grid">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2 class="tilt-light">Other Projects</h2>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="paper-card">
+                    <h3 class="tilt-light">Renovision</h3>
+                    <p>
+                        Exploring the practical and philosophical work of making spaces worth living in.
+                        Design, renovation, and the craft of improving what's already there.
+                    </p>
+                    <span class="annotation" style="margin-top: 1rem;">More details coming soon →</span>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="tilt-light">wallcache Photography</h3>
+                    <p>
+                        Photography as an exercise in attention. Quiet scenes, unhurried light, the
+                        strange beauty of ordinary things. Based in Barnes, working across London.
+                    </p>
+                    <a href="wallcache.html" class="annotation" style="margin-top: 1rem;">See the work →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+        <div class="container-narrow">
+            <div class="navy-card text-center">
+                <h2 class="tilt-light">Let's Work Together</h2>
+                <p style="margin-top: 1rem; line-height: 1.8;">
+                    Looking for a data engineer? Interested in collaborating on Long Form Press?
+                    Have a project that needs attention? Let's talk.
+                </p>
+                <a href="mailto:hal@wallcache.com" class="btn btn-accent" style="margin-top: 2rem;">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hal Wall</h3>
+                    <p>
+                        Data Engineer, photographer, and writer based in Barnes, London.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">gh</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="writing/index.html">Writing</a></li>
+                        <li><a href="wallcache.html">wallcache</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><a href="projects.html#long-form-press">Long Form Press</a></li>
+                        <li><a href="wallcache.html">wallcache Photography</a></li>
+                        <li><a href="projects.html">Data Engineering Work</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Writing</h3>
+                    <ul>
+                        <li><a href="writing/blog.html">Blog</a></li>
+                        <li><a href="writing/book-reviews.html">Book Reviews</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hal Wall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

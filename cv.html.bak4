@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hal Wall's CV - Data Engineer at Chubb Insurance with Imperial Physics degree. Python, SQL, Spark, Databricks expertise.">
+    <title>CV | Hal Wall</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ffk6gen.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="assets/images/logos/wallcache-logo.png" alt="wallcache Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="dropdown">
+                    <a href="writing/index.html">Writing ▾</a>
+                    <div class="dropdown-content">
+                        <a href="writing/blog.html">Blog</a>
+                        <a href="writing/book-reviews.html">Book Reviews</a>
+                    </div>
+                </li>
+                <li><a href="wallcache.html">wallcache</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-content">
+            <h1 class="tilt-heavy">Hal Wall</h1>
+            <p class="tagline">Data Engineer</p>
+        </div>
+    </section>
+
+    <!-- Professional Summary -->
+    <section>
+        <div class="container-narrow">
+            <div class="paper-card">
+                <h2 class="tilt-light">Professional Summary</h2>
+                <p>
+                    Analytical, creative, and quietly relentless. I'm a London-based Data Engineer with a background
+                    in Theoretical Physics and a deep love for building clean, scalable, and intelligent systems.
+                    I work at the intersection of data, machine learning, distributed data architecture, and cloud
+                    transformation—helping organisations turn complex information into clarity and action.
+                </p>
+                <p>
+                    I've helped modernise infrastructure for Fortune 500 firms and built data pipelines that power
+                    predictive models and business-critical insights.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="blueprint-grid">
+        <div class="container-narrow">
+            <h2 class="tilt-light mb-xl text-center">Professional Experience</h2>
+
+            <div class="timeline">
+                <!-- Chubb Insurance -->
+                <div class="timeline-item">
+                    <div class="timeline-date">November 2024 – Current</div>
+                    <h3 class="timeline-title">Data Engineer</h3>
+                    <div class="timeline-company">CHUBB INSURANCE, GLOBAL ANALYTICS</div>
+                    <div class="timeline-description">
+                        <p>
+                            Worked at the intersection of data engineering and machine learning within Chubb's EMEA
+                            Analytics team and Global Analytics team, partnering with data scientists and ML engineers
+                            to build secure, scalable data products powering AI-driven portfolio management.
+                        </p>
+                        <p><strong>Key Achievements:</strong></p>
+                        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                            <li>Built performant data pipelines using Python, SQL, Databricks and PySpark, enabling
+                            robust, reliable access to clean data for downstream modelling</li>
+                            <li>Supported Chubb's cloud migration and implementation of Databricks Unity Catalog,
+                            transitioning legacy on-prem systems to Azure-native architecture</li>
+                            <li>Designed and automated key workflows using Kafka and Databricks Workflows, improving
+                            efficiency and analytics throughput</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Databricks</span>
+                            <span class="tag">PySpark</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">Kafka</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quilter Financial Planning -->
+                <div class="timeline-item">
+                    <div class="timeline-date">October 2022 – November 2024 (2 Years)</div>
+                    <h3 class="timeline-title">Data Engineer (Contractor)</h3>
+                    <div class="timeline-company">QUILTER FINANCIAL PLANNING</div>
+                    <div class="timeline-description">
+                        <p>
+                            Migrated on-prem databases to Azure Cloud, building robust pipelines with Azure Data Factory,
+                            Databricks, Python, SQL, and PySpark to ensure data quality and reliability. Worked in agile
+                            teams, contributing to scrums, stand-ups, and stakeholder alignment to deliver high-impact,
+                            business-driven solutions.
+                        </p>
+                        <p><strong>Tech Stack:</strong> Databricks, Azure Data Factory, SQL, Python, PySpark, Tableau, Power BI</p>
+                        <p><strong>DevOps:</strong> Git, Azure DevOps, Automated Testing</p>
+                        <p><strong>Workflow:</strong> Agile, Scrum, Stakeholder Engagement, JIRA</p>
+                        <div class="project-tags" style="margin-top: 1rem;">
+                            <span class="tag">Databricks</span>
+                            <span class="tag">Azure Data Factory</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">PySpark</span>
+                            <span class="tag">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- wallcache Freelance -->
+                <div class="timeline-item">
+                    <div class="timeline-date">February 2019 – May 2022 (3 Years)</div>
+                    <h3 class="timeline-title">Freelance Creative</h3>
+                    <div class="timeline-company">WALLCACHE</div>
+                    <div class="timeline-description">
+                        <p>
+                            Freelancing in graphic design, portraiture and product photography, motion graphics,
+                            logo design, and creative consultation to clients.
+                        </p>
+                        <div class="project-tags" style="margin-top: 1rem;">
+                            <span class="tag">Photography</span>
+                            <span class="tag">Graphic Design</span>
+                            <span class="tag">Creative Direction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+        <div class="container-narrow">
+            <h2 class="tilt-light mb-xl text-center">Education</h2>
+
+            <div class="timeline">
+                <!-- Imperial College -->
+                <div class="timeline-item">
+                    <div class="timeline-date">October 2017 – June 2020</div>
+                    <h3 class="timeline-title">2:1 BSc in Theoretical Physics</h3>
+                    <div class="timeline-company">IMPERIAL COLLEGE LONDON</div>
+                    <div class="timeline-description">
+                        <p>
+                            <strong>Core Modules:</strong> Statistical Mechanics, Computer Science, Atomic Physics,
+                            Electromagnetism, Mathematical Methods, Fourier Analysis, Vector Calculus, Differential
+                            Equations, Medical Imaging & MRI, Nuclear Physics, Optics, and Quantum Mechanics. All
+                            modules contain strong elements of statistical analysis, experimental research, and programming.
+                        </p>
+                        <p>
+                            <strong>Final Year BSc Thesis:</strong> Conducted an in-depth mathematical derivation of
+                            the Black-Scholes-Merton model from physical first principles for predicting stock option
+                            prices, under supervision of Professor Dimitri Vvedensky.
+                        </p>
+                        <p>
+                            <strong>Year 2 Computing Project:</strong> Object-Oriented Programming to investigate the
+                            performance of various lenses through Optical Ray Tracing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Business Analytics -->
+                <div class="timeline-item">
+                    <div class="timeline-date">February 2022 – June 2022</div>
+                    <h3 class="timeline-title">Business Analytics</h3>
+                    <div class="timeline-company">IMPERIAL COLLEGE BUSINESS SCHOOL</div>
+                    <div class="timeline-description">
+                        <p>
+                            Used machine learning techniques including regression analysis, nearest neighbour methods,
+                            decision trees, support vector machines, and clustering techniques in Python. Summarised
+                            and visualised data to inform business decisions using linear programming and integer programming.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- A-Levels -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2015 – 2017</div>
+                    <h3 class="timeline-title">A-Levels & iGCSEs</h3>
+                    <div class="timeline-company">MALVERN COLLEGE</div>
+                    <div class="timeline-description">
+                        <p><strong>A-Levels (2017):</strong> 3 A* (Physics, Mathematics, Further Mathematics)</p>
+                        <p><strong>iGCSEs (2015):</strong> 13 A*</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="blueprint-grid">
+        <div class="container">
+            <h2 class="tilt-light mb-xl text-center">Technical Skills</h2>
+
+            <div class="grid grid-3">
+                <div class="navy-card">
+                    <h3 class="handwriting tilt-light">Languages</h3>
+                    <div class="project-tags" style="margin-top: 1rem;">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">PySpark</span>
+                    </div>
+                </div>
+
+                <div class="navy-card">
+                    <h3 class="handwriting tilt-light">Python Libraries</h3>
+                    <div class="project-tags" style="margin-top: 1rem;">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">BeautifulSoup</span>
+                        <span class="tag">Matplotlib</span>
+                    </div>
+                </div>
+
+                <div class="navy-card">
+                    <h3 class="handwriting tilt-light">Cloud & Big Data</h3>
+                    <div class="project-tags" style="margin-top: 1rem;">
+                        <span class="tag">Azure</span>
+                        <span class="tag">Databricks</span>
+                        <span class="tag">Snowflake</span>
+                        <span class="tag">Hadoop</span>
+                    </div>
+                </div>
+
+                <div class="navy-card">
+                    <h3 class="handwriting tilt-light">Data Platforms</h3>
+                    <div class="project-tags" style="margin-top: 1rem;">
+                        <span class="tag">Azure Data Factory</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">Unity Catalog</span>
+                        <span class="tag">Spark SQL</span>
+                    </div>
+                </div>
+
+                <div class="navy-card">
+                    <h3 class="handwriting tilt-light">Database & Analytics</h3>
+                    <div class="project-tags" style="margin-top: 1rem;">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Data Modeling</span>
+                        <span class="tag">Terraform</span>
+                    </div>
+                </div>
+
+                <div class="navy-card">
+                    <h3 class="handwriting tilt-light">DevOps & Tools</h3>
+                    <div class="project-tags" style="margin-top: 1rem;">
+                        <span class="tag">Git</span>
+                        <span class="tag">Azure DevOps</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">JIRA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal -->
+    <section>
+        <div class="container-narrow">
+            <div class="paper-card">
+                <h2 class="tilt-light handwriting">Personal</h2>
+                <p>
+                    Outside the data world, I'm a devoted reader of fiction and philosophy, a long-distance runner,
+                    and an enthusiastic hiker—often found exploring the wilder corners of the UK with my dog. Whether
+                    I'm building resilient pipelines or trekking through Glen Coe, I bring the same focused energy:
+                    improve continuously, learn deeply, and leave things better than I found them.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="blueprint-grid">
+        <div class="container-narrow">
+            <div class="navy-card text-center">
+                <h2 class="tilt-light">Contact</h2>
+                <p style="margin-top: 1.5rem; font-size: 1.2rem;">
+                    <strong>Email:</strong> <a href="mailto:henry.n.wall@gmail.com" style="color: var(--burnt-orange);">henry.n.wall@gmail.com</a><br>
+                    <strong>Phone:</strong> 07516 188203<br>
+                    <strong>Website:</strong> <a href="https://wallcache.com" style="color: var(--burnt-orange);">wallcache.com</a>
+                </p>
+                <div style="margin-top: 2rem;">
+                    <a href="#" class="btn btn-accent">Download PDF CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hal Wall</h3>
+                    <p>
+                        Data Engineer, photographer, and writer based in Barnes, London.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">gh</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="writing/index.html">Writing</a></li>
+                        <li><a href="wallcache.html">wallcache</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><a href="projects.html#long-form-press">Long Form Press</a></li>
+                        <li><a href="wallcache.html">wallcache Photography</a></li>
+                        <li><a href="projects.html">Data Engineering Work</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Writing</h3>
+                    <ul>
+                        <li><a href="writing/blog.html">Blog</a></li>
+                        <li><a href="writing/book-reviews.html">Book Reviews</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hal Wall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
