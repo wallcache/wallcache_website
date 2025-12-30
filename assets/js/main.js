@@ -219,9 +219,14 @@ function initLightbox() {
     const lightboxImg = lightbox.querySelector('img');
     const closeBtn = lightbox.querySelector('.lightbox-close');
 
-    // Add click handlers to all photo items
-    const photoItems = document.querySelectorAll('.photo-item');
+    // Add click handlers to photo items (but not logo items which are links)
+    const photoItems = document.querySelectorAll('.photo-item:not(a .photo-item)');
     photoItems.forEach(item => {
+        // Skip if parent is an anchor tag (logo items)
+        if (item.closest('a')) {
+            return;
+        }
+
         item.addEventListener('click', function(e) {
             e.preventDefault();
             const img = this.querySelector('img');
@@ -270,6 +275,7 @@ function initMasonryLayout() {
     const galleries = document.querySelectorAll('.photo-gallery');
 
     galleries.forEach(gallery => {
+        // Get items - for logo pages, get the photo-item inside anchor tags
         const items = gallery.querySelectorAll('.photo-item');
 
         items.forEach(item => {
@@ -287,7 +293,10 @@ function initMasonryLayout() {
                     if (imgHeight > 0) {
                         // Calculate how many rows this image should span
                         const rowSpan = Math.ceil((imgHeight + rowGap) / (rowHeight + rowGap));
-                        item.style.gridRowEnd = `span ${rowSpan}`;
+
+                        // Apply to parent if it's an anchor (logo page), otherwise to item itself
+                        const targetElement = item.closest('a') || item;
+                        targetElement.style.gridRowEnd = `span ${rowSpan}`;
                     }
                 };
 
