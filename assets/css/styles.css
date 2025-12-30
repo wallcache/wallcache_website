@@ -1503,15 +1503,21 @@ footer > * {
 /* Page Transitions */
 body {
   opacity: 1;
-  transition: opacity 0.4s ease-out;
 }
 
 body.page-transitioning {
   opacity: 0;
+  transition: opacity 0.4s ease-out;
 }
 
 .page-content {
   animation: pageEnter 0.8s ease-out;
+}
+
+.page-content header {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 @keyframes pageEnter {
