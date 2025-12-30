@@ -1606,6 +1606,79 @@ body > header * {
 }
 
 /* ============================================
+   COMPACT READING LIST TABLE
+   ============================================ */
+.reading-table {
+  width: 100%;
+  background: var(--paper-white);
+  border: 2px solid var(--navy);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.reading-table-header {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 0.8fr 1fr 0.8fr;
+  background: var(--navy);
+  color: var(--cream);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-century);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-bottom: 2px solid var(--navy-dark);
+}
+
+.reading-table-row {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 0.8fr 1fr 0.8fr;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(10, 22, 40, 0.1);
+  transition: background var(--transition-fast);
+  font-size: 0.95rem;
+}
+
+.reading-table-row:hover {
+  background: rgba(168, 197, 221, 0.1);
+}
+
+.reading-table-row:last-child {
+  border-bottom: none;
+}
+
+.book-title {
+  font-family: var(--font-century);
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.book-author {
+  color: var(--charcoal);
+}
+
+.book-year,
+.book-finished,
+.book-days {
+  color: var(--charcoal);
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .reading-table-header,
+  .reading-table-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .reading-table-header > span:not(:first-child),
+  .reading-table-row > span:not(:first-child) {
+    font-size: 0.85rem;
+    padding-left: 1rem;
+  }
+}
+
+/* ============================================
    FLOATING CTA BUTTON
    ============================================ */
 .floating-cta {
