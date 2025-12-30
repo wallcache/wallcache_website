@@ -479,12 +479,14 @@ function initLetterFlicker() {
                 // Get random letter from the appropriate case set
                 const randomLetter = letterSet[Math.floor(Math.random() * letterSet.length)];
 
-                // Add a subtle scale effect for smoothness
+                // Add motion blur and subtle scale effect
                 this.style.transform = 'scale(1.05)';
+                this.style.filter = 'blur(2px)';
                 this.textContent = randomLetter;
 
                 setTimeout(() => {
                     this.style.transform = 'scale(1)';
+                    this.style.filter = 'blur(0)';
                 }, 25);
 
                 iterations++;
