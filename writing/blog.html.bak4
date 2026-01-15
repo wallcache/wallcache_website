@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hal Wall's blog - Essays on data engineering, literature, and creative work.">
+    <title>Blog | Hal Wall</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ffk6gen.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/logos/wallcache-logo.png" alt="wallcache Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../cv.html">CV</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li class="dropdown">
+                    <a href="index.html">Writing ▾</a>
+                    <div class="dropdown-content">
+                        <a href="blog.html">Blog</a>
+                        <a href="book-reviews.html">Book Reviews</a>
+                    </div>
+                </li>
+                <li><a href="../wallcache.html">wallcache</a></li>
+            </ul>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-content">
+            <h1 class="tilt-heavy">Blog</h1>
+            <p class="handwriting" style="font-size: 1.3rem;">Essays on reading, literature, and the craft of paying attention</p>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section>
+        <div class="container-narrow">
+            <div class="paper-card text-center">
+                <p style="font-size: 1.2rem; line-height: 1.8;">
+                    Essays on reading, literature, and the craft of paying attention. Pieces on Tolstoy,
+                    McCarthy, Dickinson, philosophy, and why finishing the book still matters.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blueprint-grid">
+        <div class="container-narrow">
+            <!-- Post 1 -->
+            <div class="blog-post">
+                <div class="blog-meta">
+                    <span class="handwriting">Data Engineering</span>
+                    <span class="handwriting">December 2024</span>
+                </div>
+                <h2 class="blog-title">
+                    <a href="#">Building Data Pipelines That Don't Break</a>
+                </h2>
+                <p class="blog-excerpt">
+                    After three years in data engineering, I've learned that robust pipelines aren't built
+                    through clever code—they're built through disciplined processes, comprehensive testing,
+                    and respect for Murphy's Law. Every production pipeline will eventually fail. The question
+                    isn't if, but when, and how gracefully you've prepared for that moment.
+                </p>
+                <p class="blog-excerpt">
+                    This covers the practices that have saved me countless midnight debugging sessions:
+                    idempotent operations, comprehensive logging, circuit breakers, and the mindset shift
+                    from "making it work" to "making it resilient."
+                </p>
+                <a href="#" class="read-more">Read full post →</a>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="blog-post">
+                <div class="blog-meta">
+                    <span class="handwriting">Thinking</span>
+                    <span class="handwriting">November 2024</span>
+                </div>
+                <h2 class="blog-title">
+                    <a href="#">The Engineer's Case for Reading Literature</a>
+                </h2>
+                <p class="blog-excerpt">
+                    There's a tendency in tech to dismiss literature as impractical—nice, perhaps, but
+                    ultimately separate from the "real work" of building systems and shipping products.
+                    I think this misses something fundamental about what makes great engineers.
+                </p>
+                <p class="blog-excerpt">
+                    Literature teaches empathy, ambiguity, and the messy complexity of human systems—exactly
+                    what you need when designing products for actual people. The best engineers I know
+                    understand that technical problems are rarely purely technical. Great novels are case
+                    studies in human complexity.
+                </p>
+                <a href="#" class="read-more">Read full post →</a>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="blog-post">
+                <div class="blog-meta">
+                    <span class="handwriting">Technical</span>
+                    <span class="handwriting">October 2024</span>
+                </div>
+                <h2 class="blog-title">
+                    <a href="#">My Data Engineering Stack in 2024</a>
+                </h2>
+                <p class="blog-excerpt">
+                    The modern data stack has exploded with options. After working with various tools over
+                    the past few years, here's what I've settled on: Python for transformations, dbt for
+                    modeling, Airflow for orchestration, and Postgres for storage.
+                </p>
+                <p class="blog-excerpt">
+                    This isn't a "one true stack" manifesto—context matters enormously. But these tools
+                    have proven reliable, maintainable, and flexible. When choosing tools for production
+                    systems, boring and reliable beats exciting and new every time.
+                </p>
+                <a href="#" class="read-more">Read full post →</a>
+            </div>
+
+            <!-- Post 4 -->
+            <div class="blog-post">
+                <div class="blog-meta">
+                    <span class="handwriting">Creativity</span>
+                    <span class="handwriting">September 2024</span>
+                </div>
+                <h2 class="blog-title">
+                    <a href="#">Side Projects as Creative Practice</a>
+                </h2>
+                <p class="blog-excerpt">
+                    Long Form Press started as a weekend project—an excuse to learn e-commerce while building
+                    something I genuinely wanted to exist. wallcache emerged from wanting to improve my
+                    photography skills. Neither was planned as a "business" in the traditional sense.
+                </p>
+                <p class="blog-excerpt">
+                    I've come to see side projects as essential creative practice. The best ones emerge from
+                    genuine curiosity and the desire to build something you'd use yourself. Success isn't
+                    measured in revenue or users—it's measured in learning, growth, and the satisfaction of
+                    making something real.
+                </p>
+                <a href="#" class="read-more">Read full post →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics -->
+    <section>
+        <div class="container">
+            <h2 class="tilt-light mb-xl text-center">Topics</h2>
+            <div class="grid grid-4">
+                <div class="navy-card text-center">
+                    <h3 class="handwriting">Data Engineering</h3>
+                    <p style="font-size: 0.95rem;">
+                        Pipelines, tooling, best practices, and lessons from production systems.
+                    </p>
+                </div>
+
+                <div class="navy-card text-center">
+                    <h3 class="handwriting">Technical</h3>
+                    <p style="font-size: 0.95rem;">
+                        Tools, technologies, and deep-dives on specific problems and solutions.
+                    </p>
+                </div>
+
+                <div class="navy-card text-center">
+                    <h3 class="handwriting">Thinking</h3>
+                    <p style="font-size: 0.95rem;">
+                        Ideas, mental models, and reflections on technology and creativity.
+                    </p>
+                </div>
+
+                <div class="navy-card text-center">
+                    <h3 class="handwriting">Creativity</h3>
+                    <p style="font-size: 0.95rem;">
+                        Side projects, creative practice, and building outside of work.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hal Wall</h3>
+                    <p>
+                        Data Engineer, photographer, and writer based in Barnes, London.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">gh</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="../cv.html">CV</a></li>
+                        <li><a href="../projects.html">Projects</a></li>
+                        <li><a href="index.html">Writing</a></li>
+                        <li><a href="../wallcache.html">wallcache</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><a href="../projects.html#long-form-press">Long Form Press</a></li>
+                        <li><a href="../wallcache.html">wallcache Photography</a></li>
+                        <li><a href="../projects.html">Data Engineering Work</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Writing</h3>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="book-reviews.html">Book Reviews</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hal Wall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
