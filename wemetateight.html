@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WeMetAtEight - Event photography by Hal Wall for London's innovative dating events.">
+    <title>WeMetAtEight | wallcache Photography</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ffk6gen.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="assets/images/logos/wallcache-mono-small.png" alt="wallcache Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="cv.html">cv.</a></li>
+                <li class="dropdown">
+                    <a href="projects.html">projects. ▾</a>
+                    <div class="dropdown-content">
+                        <a href="renovision.html">renovision.</a>
+                        <a href="https://leavewise.uk" target="_blank">leavewise.</a>
+                        <a href="long-form-press.html">long form press.</a>
+                        <a href="writing/book-reviews.html">book reviews.</a>
+                        <a href="writing/reading-list.html">reading.</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="wallcache.html">wallcache. ▾</a>
+                    <div class="dropdown-content">
+                        <a href="wallcache-logos.html">logos.</a>
+                        <a href="wallcache.html">photography.</a>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 70vh;">
+        <div class="hero-content">
+            <h1 class="tilt-heavy">WeMetAtEight</h1>
+            <p class="handwriting" style="font-size: 1.5rem;">Capturing connection at London's dating events</p>
+        </div>
+    </section>
+
+    <!-- Project Description -->
+    <section>
+        <div class="container-narrow">
+            <div class="paper-card">
+                <h2 class="tilt-light mb-m">About the Project</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                    WeMetAtEight brings a fresh approach to dating in London—structured events where strangers
+                    meet over conversation, games, and genuine connection. As event photographer, I document
+                    the energy, laughter, and authentic moments that emerge when people step away from apps
+                    and into real interaction.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    The challenge is balancing documentation with discretion—capturing the atmosphere without
+                    intruding on intimate conversations. These images show the event's structure, the venue's
+                    ambiance, and the collective energy of people taking a chance on meeting someone new.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back Link -->
+    <section>
+        <div class="container">
+            <a href="wallcache.html" style="display: inline-block; margin-bottom: 2rem; color: var(--burnt-orange); text-decoration: none; font-size: 1rem;">
+                ← Back to Photography
+            </a>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="blueprint-grid">
+        <div class="container">
+            <div class="masonry-grid" id="photo-gallery">
+                <!-- Photos will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hal Wall</h3>
+                    <p>Data Engineer, photographer, and writer based in Barnes, London.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">gh</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="writing/index.html">Writing</a></li>
+                        <li><a href="wallcache.html">wallcache</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><a href="projects.html#long-form-press">Long Form Press</a></li>
+                        <li><a href="wallcache.html">wallcache Photography</a></li>
+                        <li><a href="projects.html">Data Engineering Work</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Writing</h3>
+                    <ul>
+                        <li><a href="writing/book-reviews.html">Book Reviews</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hal Wall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Load WeMetAtEight photos dynamically
+        document.addEventListener('DOMContentLoaded', function() {
+            const gallery = document.getElementById('photo-gallery');
+            const photoCount = 175;
+
+            for (let i = 1; i <= photoCount; i++) {
+                const imgPath = `assets/images/photography/WeMetAtEight/wma8${i}.JPG`;
+
+                const imgElement = document.createElement('img');
+                imgElement.src = imgPath;
+                imgElement.alt = `WeMetAtEight event photo ${i}`;
+                imgElement.className = 'masonry-item';
+                imgElement.loading = 'lazy';
+
+                // Handle missing images gracefully
+                imgElement.onerror = function() {
+                    this.style.display = 'none';
+                };
+
+                gallery.appendChild(imgElement);
+            }
+
+            // Re-initialize lightbox and scroll animations
+            if (typeof initLightbox === 'function') {
+                setTimeout(initLightbox, 100);
+            }
+            if (typeof initScrollAnimations === 'function') {
+                setTimeout(initScrollAnimations, 100);
+            }
+        });
+    </script>
+</body>
+</html>
