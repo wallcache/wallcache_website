@@ -1,0 +1,4 @@
+.DS_Store
+*.bak*
+image_rename_mapping.txt
+manual_image_mapping.txt
