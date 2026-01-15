@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="wallcache Logos by Hal Wall - Brand identity and logo design work.">
+    <title>wallcache Logos | Hal Wall</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ffk6gen.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="assets/images/logos/wallcache-mono-small.png" alt="wallcache Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="cv.html">cv</a></li>
+                <li class="dropdown">
+                    <a href="projects.html">projects ▾</a>
+                    <div class="dropdown-content">
+                        <a href="renovision.html">renovision.</a>
+                        <a href="https://leavewise.uk" target="_blank">leavewise.</a>
+                        <a href="long-form-press.html">long form press.</a>
+                        <a href="writing/book-reviews.html">book reviews.</a>
+                        <a href="writing/reading-list.html">reading.</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="wallcache.html">wallcache ▾</a>
+                    <div class="dropdown-content">
+                        <a href="wallcache-logos.html">logos.</a>
+                        <a href="wallcache.html">photography.</a>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 70vh;">
+        <div class="hero-content">
+            <div style="margin-bottom: 2rem;">
+                <img src="assets/images/logos/2wallcache-logo.png" alt="wallcache Logo" style="max-width: 300px; height: auto;">
+            </div>
+            <h1 class="tilt-heavy">logos.</h1>
+        </div>
+    </section>
+
+    <!-- Brand Statement -->
+    <section>
+        <div class="container-narrow">
+            <div class="paper-card text-center">
+                <p style="font-size: 1.3rem; line-height: 1.9;">
+                    Logo design and brand identity work. Clean, purposeful marks that stand the test of time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Gallery -->
+    <section>
+        <div class="container">
+            <h2 class="tilt-light mb-xl text-center">Logo Portfolio</h2>
+            <div class="grid grid-3" id="logo-gallery">
+                <!-- Logo project cards loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Booking -->
+    <section class="blueprint-grid">
+        <div class="container-narrow">
+            <div class="paper-card text-center">
+                <h2 class="tilt-light">Commission a Logo</h2>
+                <p style="margin-top: 1rem; line-height: 1.8;">
+                    Interested in working together on a logo or brand identity project? Send me a
+                    message with details about your vision, and I'll get back to you.
+                </p>
+                <div style="margin-top: 2rem;">
+                    <a href="mailto:henry.n.wall@gmail.com" class="btn btn-primary">
+                        Email Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hal Wall</h3>
+                    <p>
+                        Data Engineer, photographer, and writer based in Barnes, London.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">gh</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="cv.html">cv</a></li>
+                        <li><a href="projects.html">projects.</a></li>
+                        <li><a href="writing/index.html">writing.</a></li>
+                        <li><a href="wallcache.html">wallcache.</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><a href="projects.html#long-form-press">Long Form Press</a></li>
+                        <li><a href="wallcache.html">wallcache Photography</a></li>
+                        <li><a href="projects.html">Data Engineering Work</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Writing</h3>
+                    <ul>
+                        <li><a href="writing/book-reviews.html">book reviews.</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hal Wall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Load logo project cards with hero images
+        document.addEventListener('DOMContentLoaded', function() {
+            const gallery = document.getElementById('logo-gallery');
+
+            // Define logo projects with hero images
+            const logoProjects = [
+                { name: 'ARUS', slug: 'arus', folder: 'ARUS', hero: 'hero.png' },
+                { name: 'Artem\'s Gym', slug: 'artems-gym', folder: 'artems-gym', hero: 'hero.png' },
+                { name: 'AssetLab', slug: 'assetlab', folder: 'AssetLab', hero: 'hero.png' },
+                { name: 'Crowd0', slug: 'crowd0', folder: 'Crowd0', hero: 'hero.png' },
+                { name: 'Farrago', slug: 'farrago', folder: 'Farrago', hero: 'hero.jpg' },
+                { name: 'NextDistrict', slug: 'nextdistrict', folder: 'NextDistrict', hero: 'hero.jpeg' },
+                { name: 'Olive & Co', slug: 'olive-and-co', folder: 'olive-and-co', hero: 'hero.png' },
+                { name: 'OnlyOne', slug: 'onlyone', folder: 'OnlyOne', hero: 'hero.jpg' },
+                { name: 'Rachael Perry', slug: 'rachael-perry', folder: 'rachael-perry', hero: 'hero.png' },
+                { name: 'SLINK', slug: 'slink', folder: 'SLINK', hero: 'hero.png' },
+                { name: 'VineMe', slug: 'vineme', folder: 'VineMe', hero: 'hero.png' }
+            ];
+
+            logoProjects.forEach(project => {
+                // Create clickable card with hero image
+                const cardLink = document.createElement('a');
+                cardLink.href = `logo-${project.slug}.html`;
+                cardLink.style.textDecoration = 'none';
+                cardLink.style.color = 'inherit';
+
+                const card = document.createElement('div');
+                card.className = 'navy-card';
+                card.style.cursor = 'pointer';
+                card.style.transition = 'transform 0.2s ease, box-shadow 0.2s ease';
+                card.style.padding = '0';
+                card.style.overflow = 'hidden';
+
+                // Hero image
+                const heroPath = `assets/images/projects/logo-design/${project.folder}/${project.hero}`;
+                const img = document.createElement('img');
+                img.src = heroPath;
+                img.alt = `${project.name} Logo`;
+                img.style.width = '100%';
+                img.style.height = '250px';
+                img.style.objectFit = 'cover';
+                img.style.display = 'block';
+
+                // Project name overlay
+                const nameOverlay = document.createElement('div');
+                nameOverlay.style.padding = '1.5rem';
+                nameOverlay.innerHTML = `<h3 class="handwriting tilt-light" style="font-size: 1.5rem; margin: 0;">${project.name}</h3><p style="margin-top: 0.5rem; font-size: 0.9rem;">View project →</p>`;
+
+                card.appendChild(img);
+                card.appendChild(nameOverlay);
+                cardLink.appendChild(card);
+                gallery.appendChild(cardLink);
+
+                // Hover effect
+                cardLink.addEventListener('mouseenter', function() {
+                    card.style.transform = 'translateY(-4px)';
+                    card.style.boxShadow = '0 8px 16px rgba(0,0,0,0.15)';
+                });
+                cardLink.addEventListener('mouseleave', function() {
+                    card.style.transform = 'translateY(0)';
+                    card.style.boxShadow = '';
+                });
+            });
+
+            // Re-initialize scroll animations
+            if (typeof initScrollAnimations === 'function') {
+                setTimeout(initScrollAnimations, 100);
+            }
+        });
+    </script>
+</body>
+</html>

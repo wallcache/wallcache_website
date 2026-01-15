@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Renovision - AI-powered property renovation visualisation tool for Rightmove listings">
+    <title>Renovision | Hal Wall</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ffk6gen.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Before/After Slider Styles -->
+    <style>
+        .comparison-slider {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .comparison-slider img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .comparison-slider .img-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .comparison-slider .img-wrapper img {
+            width: 200%;
+            max-width: none;
+        }
+        .comparison-slider .slider-handle {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: var(--burnt-orange);
+            cursor: ew-resize;
+            transform: translateX(-50%);
+        }
+        .comparison-slider .slider-handle::before {
+            content: '◀ ▶';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--burnt-orange);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .screenshot-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+        .screenshot-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .screenshot-caption {
+            padding: 1rem;
+            background: var(--cream);
+            font-size: 0.9rem;
+            color: var(--charcoal);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="assets/images/logos/wallcache-mono-small.png" alt="wallcache Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="cv.html">cv</a></li>
+                <li class="dropdown">
+                    <a href="projects.html">projects ▾</a>
+                    <div class="dropdown-content">
+                        <a href="renovision.html">renovision.</a>
+                        <a href="https://leavewise.uk" target="_blank">leavewise.</a>
+                        <a href="long-form-press.html">long form press.</a>
+                        <a href="writing/book-reviews.html">book reviews.</a>
+                        <a href="writing/reading-list.html">reading.</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="wallcache.html">wallcache ▾</a>
+                    <div class="dropdown-content">
+                        <a href="wallcache-logos.html">logos.</a>
+                        <a href="wallcache.html">photography.</a>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="tilt-light" style="letter-spacing: -0.02em;">Renovision</h1>
+            <p class="tagline">AI-Powered Property Renovation Visualisation</p>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section>
+        <div class="container-narrow">
+            <div class="paper-card">
+                <p style="font-size: 1.2rem; line-height: 1.9;">
+                    Renovision is an AI-powered property renovation visualisation tool for Rightmove listings.
+                    Users paste a Rightmove URL, select a room, configure a renovation style, and watch AI
+                    transform the space into a realistic vision of what it could be.
+                </p>
+                <p style="font-size: 1.2rem; line-height: 1.9; margin-top: 1rem;">
+                    Built for people who can see past magnolia walls.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website UI Screenshot -->
+    <section>
+        <div class="container">
+            <div class="screenshot-grid">
+                <div class="screenshot-item">
+                    <img src="assets/renovision_screenshots/main-landing.png" alt="Renovision main interface">
+                    <div class="screenshot-caption">The main interface - paste a Rightmove URL and select your style</div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/renovision_screenshots/room-selection.png" alt="Room selection grid">
+                    <div class="screenshot-caption">Browse and select rooms from any Rightmove listing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Origin Story -->
+    <section class="blueprint-grid">
+        <div class="container-narrow">
+            <div class="navy-card">
+                <h2 class="tilt-light">The Problem</h2>
+                <p style="margin-top: 1.5rem; line-height: 1.8;">
+                    I built Renovision while Izzy and I were looking for a doer-upper. It solved a real
+                    problem: visualising potential without destroying the integrity of the space. I've built
+                    similar tools before, but the emergence of Nano Banana made this worth properly productionising.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Examples -->
+    <section>
+        <div class="container">
+            <h2 class="tilt-light mb-xl text-center">Before & After</h2>
+
+            <div class="screenshot-item" style="max-width: 900px; margin: 0 auto;">
+                <img src="assets/renovision_screenshots/before-after-kitchen.png" alt="Kitchen transformation - before and after comparison">
+                <div class="screenshot-caption">A dated kitchen transformed into a modern minimal space with sage green cabinetry and warm wood tones</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Journey -->
+    <section class="blueprint-grid">
+        <div class="container">
+            <h2 class="tilt-light mb-xl text-center">The Development Journey</h2>
+
+            <div class="grid grid-2">
+                <div class="navy-card">
+                    <h3 class="handwriting tilt-light">Product First</h3>
+                    <p style="margin-top: 1rem; line-height: 1.8;">
+                        The philosophy was simple: ship something useful, then iterate. Every decision prioritised
+                        user value over technical elegance. The result is a tool that solves a real problem
+                        people actually have, built in a way that can evolve.
+                    </p>
+                </div>
+
+                <div class="navy-card">
+                    <h3 class="handwriting tilt-light">From Clerk to Postgres</h3>
+                    <p style="margin-top: 1rem; line-height: 1.8;">
+                        Originally built with Clerk authentication for speed-to-market, I migrated to a
+                        standard PostgreSQL setup for better control, simpler data management, and lower
+                        operational costs. Sometimes the boring choice is the right choice.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section>
+        <div class="container">
+            <h2 class="tilt-light mb-xl text-center">How It Works</h2>
+
+            <div class="screenshot-grid">
+                <div class="screenshot-item">
+                    <img src="assets/renovision_screenshots/configuration.png" alt="Configuration options">
+                    <div class="screenshot-caption">Configure room type, design style, lighting, colours, and flooring</div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/renovision_screenshots/the-process.png" alt="The process steps">
+                    <div class="screenshot-caption">Four simple steps from URL to transformation</div>
+                </div>
+            </div>
+
+            <div class="paper-card" style="margin-top: 2rem;">
+                <h3 class="handwriting tilt-light">Data That's Easy to Use</h3>
+                <p style="margin-top: 1rem; line-height: 1.8;">
+                    The database captures everything needed without overcomplicating: user sessions, property URLs,
+                    transformation configurations, and generated images. Clean foreign keys, sensible indexes,
+                    and straightforward queries. Data retrieval is fast because the schema was designed
+                    for the actual access patterns, not theoretical best practices.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges & Progress -->
+    <section class="blueprint-grid">
+        <div class="container">
+            <h2 class="tilt-light mb-xl text-center">Challenges Along the Way</h2>
+
+            <div class="grid grid-2">
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">Connectivity Issues</h3>
+                    <p style="margin-top: 1rem; line-height: 1.8;">
+                        Rightmove's dynamic content required Playwright for reliable scraping. Initial
+                        approaches with simple HTTP requests failed on JavaScript-rendered content.
+                        The headless browser solution adds latency but ensures reliability.
+                    </p>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">Image Fidelity</h3>
+                    <p style="margin-top: 1rem; line-height: 1.8;">
+                        Early AI outputs changed room dimensions and moved windows. The breakthrough
+                        came from strict prompt engineering: explicit rules that the AI must follow,
+                        preserving structure while transforming aesthetics.
+                    </p>
+                </div>
+            </div>
+
+            <div class="screenshot-grid" style="margin-top: 2rem;">
+                <div class="screenshot-item">
+                    <img src="assets/renovision_screenshots/recent-properties.png" alt="Recent properties dropdown">
+                    <div class="screenshot-caption">Quick access to recently viewed properties</div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="assets/renovision_screenshots/loading-state.png" alt="AI generation loading state">
+                    <div class="screenshot-caption">Witty loading messages while AI works its magic</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section>
+        <div class="container">
+            <h2 class="tilt-light mb-xl text-center">Features</h2>
+
+            <div class="grid grid-3">
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">Rightmove Integration</h3>
+                    <p>Automatically scrapes property images using Playwright headless browser.</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">6 Design Styles</h3>
+                    <p>Mid-Century, Minimal, Industrial, Scandinavian, Wabi-Sabi, Mediterranean.</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">Time of Day Lighting</h3>
+                    <p>Choose Day, Night, or Golden Hour lighting for realistic visualisation.</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">10 Colour Schemes</h3>
+                    <p>From Soft Linen to Midnight Blue—find the perfect palette.</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">5 Flooring Types</h3>
+                    <p>Wood parquet, tiled, stone, concrete, carpeted options available.</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">Smart Room Detection</h3>
+                    <p>AI identifies room types from captions automatically.</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">Interactive Before/After</h3>
+                    <p>Touch-friendly slider for comparing original and transformed spaces.</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">Mobile Optimised</h3>
+                    <p>No-zoom viewport, smooth touch interactions, works everywhere.</p>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">Witty Placeholders</h3>
+                    <p>60+ playful suggestions with typewriter animation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="blueprint-grid">
+        <div class="container">
+            <h2 class="tilt-light mb-xl text-center">Tech Stack</h2>
+
+            <div class="grid grid-2">
+                <div class="navy-card">
+                    <h3 class="handwriting tilt-light">Frontend</h3>
+                    <ul style="margin-top: 1rem; line-height: 1.8;">
+                        <li>React 18 (via CDN, no build step)</li>
+                        <li>Tailwind CSS (JIT via CDN)</li>
+                        <li>Babel Standalone (JSX transpilation)</li>
+                        <li>Cormorant Garamond + Inter fonts</li>
+                    </ul>
+                </div>
+
+                <div class="navy-card">
+                    <h3 class="handwriting tilt-light">Backend</h3>
+                    <ul style="margin-top: 1rem; line-height: 1.8;">
+                        <li>Python 3.11+</li>
+                        <li>FastAPI</li>
+                        <li>PostgreSQL</li>
+                        <li>Playwright (headless Chromium)</li>
+                        <li>Pillow (image processing)</li>
+                    </ul>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">AI</h3>
+                    <ul style="margin-top: 1rem; line-height: 1.8;">
+                        <li>Gemini 2.0 Flash (Google)</li>
+                        <li>Replicate Nano Banana (alternative)</li>
+                    </ul>
+                </div>
+
+                <div class="paper-card">
+                    <h3 class="handwriting tilt-light">Open Source</h3>
+                    <p style="margin-top: 1rem; line-height: 1.8;">
+                        View the complete source code on GitHub:
+                    </p>
+                    <a href="https://github.com/wallcache/renovision" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;">
+                        View on GitHub →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Insight -->
+    <section>
+        <div class="container-narrow">
+            <div class="paper-card">
+                <h2 class="tilt-light">The Breakthrough: Absolute Structural Fidelity</h2>
+                <p style="font-size: 1.1rem; line-height: 1.9; margin-top: 1.5rem;">
+                    The core challenge — and the breakthrough — was absolute structural fidelity.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.9; margin-top: 1rem;">
+                    The room's dimensions, geometry, camera angle, doors, windows, and lighting must remain
+                    <em>identical</em> to the original photograph. The AI is only allowed to change finishes,
+                    furniture, layouts, and decor — never the bones.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.9; margin-top: 1rem;">
+                    This required prompt engineering that enforced discipline at every level:
+                </p>
+                <ul style="margin-top: 1rem; line-height: 1.8; font-size: 1.05rem;">
+                    <li><strong>RULE #1 – Exact Room Dimensions:</strong> The room must remain the exact same size and shape. No enlarging, shrinking, expanding, or resizing.</li>
+                    <li><strong>RULE #2 – Doors and Windows:</strong> Any doors or windows must remain exactly where they are — same position, size, shape, and number.</li>
+                    <li><strong>RULE #3 – Camera Perspective:</strong> Keep the exact same camera angle and viewpoint. Edit the photograph only — do not generate a new image.</li>
+                </ul>
+                <p style="font-size: 1.1rem; line-height: 1.9; margin-top: 1rem;">
+                    The trick was preserving structure and lighting while allowing radical transformation through
+                    materials, furniture, and layout — making the result feel plausible, aspirational, and grounded in reality.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy & Data -->
+    <section class="blueprint-grid">
+        <div class="container-narrow">
+            <div class="navy-card">
+                <h2 class="tilt-light">Privacy First</h2>
+                <p style="margin-top: 1.5rem; line-height: 1.8;">
+                    Your data is yours. Renovision collects only what's needed to provide the service:
+                    property URLs you submit and the transformations you generate.
+                </p>
+                <p style="margin-top: 1rem; line-height: 1.8;">
+                    <strong>Easy data deletion:</strong> Request removal of all your data at any time.
+                    One email, complete deletion, no questions asked. Your privacy matters more than my metrics.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support / Buy Me a Coffee -->
+    <section>
+        <div class="container-narrow">
+            <div class="paper-card text-center">
+                <h2 class="tilt-light">Support the Project</h2>
+                <p style="margin-top: 1.5rem; line-height: 1.8;">
+                    Renovision is a passion project built in my spare time. If you find it useful,
+                    consider buying me a coffee to help cover hosting and API costs.
+                </p>
+                <div style="margin-top: 2rem;">
+                    <a href="https://buymeacoffee.com/halwall" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="font-size: 1.1rem; padding: 1rem 2rem;">
+                        Buy Me a Coffee ☕
+                    </a>
+                </div>
+                <p style="margin-top: 1.5rem; color: var(--charcoal); font-size: 0.95rem;">
+                    Every contribution helps keep the lights on and the AI running.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="blueprint-grid">
+        <div class="container-narrow">
+            <div class="navy-card text-center" style="padding: var(--spacing-3xl);">
+                <h2 class="tilt-light" style="color: var(--cream);">Try Renovision</h2>
+                <p style="font-size: 1.3rem; line-height: 1.8; margin-top: 1.5rem; color: var(--cream);">
+                    Transform Rightmove listings into visions of what could be.
+                </p>
+                <div style="margin-top: 2.5rem;">
+                    <a href="https://renovision.uk" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="font-size: 1.3rem; padding: 1.2rem 2.5rem;">
+                        Visit Renovision →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hal Wall</h3>
+                    <p>
+                        Data Engineer, photographer, and writer based in Barnes, London.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">gh</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="cv.html">cv</a></li>
+                        <li><a href="projects.html">projects.</a></li>
+                        <li><a href="wallcache.html">wallcache.</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><a href="renovision.html">Renovision</a></li>
+                        <li><a href="long-form-press.html">Long Form Press</a></li>
+                        <li><a href="wallcache.html">wallcache Photography</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Writing</h3>
+                    <ul>
+                        <li><a href="writing/book-reviews.html">book reviews.</a></li>
+                        <li><a href="writing/reading-list.html">reading.</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hal Wall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="https://renovision.uk" target="_blank" class="btn btn-accent">Visit Renovision →</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Before/After Slider Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sliders = document.querySelectorAll('.comparison-slider');
+
+            sliders.forEach(slider => {
+                const handle = slider.querySelector('.slider-handle');
+                const wrapper = slider.querySelector('.img-wrapper');
+
+                if (!handle || !wrapper) return;
+
+                let isDragging = false;
+
+                function updateSlider(x) {
+                    const rect = slider.getBoundingClientRect();
+                    let percent = ((x - rect.left) / rect.width) * 100;
+                    percent = Math.max(0, Math.min(100, percent));
+
+                    handle.style.left = percent + '%';
+                    wrapper.style.width = percent + '%';
+                }
+
+                handle.addEventListener('mousedown', () => isDragging = true);
+                document.addEventListener('mouseup', () => isDragging = false);
+                document.addEventListener('mousemove', (e) => {
+                    if (isDragging) updateSlider(e.clientX);
+                });
+
+                // Touch support
+                handle.addEventListener('touchstart', () => isDragging = true);
+                document.addEventListener('touchend', () => isDragging = false);
+                document.addEventListener('touchmove', (e) => {
+                    if (isDragging && e.touches[0]) {
+                        updateSlider(e.touches[0].clientX);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
